@@ -1,20 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Texts : MonoBehaviour {
 
-	public Text freyaTxts;
-	public Text monsterTxts;
+	public Text freyaTexts;
+	public Text monsterTexts;
+
 	void Start () {
 		
 	}
 	
-	// Update is called once per frame
 	void Update () {
-		freyaTxts.text = Avatar.freya.hpNow + "/" + Avatar.freya.hpMax;
-		monsterTxts.text = Avatar.hound.hpNow + "/" + Avatar.hound.hpMax;
+		freyaTexts.text = Avatar.freya.hpNow + "/" + Avatar.freya.hpMax + "\n" + Avatar.freya.shield;
+		monsterTexts.text = Avatar.hound.hpNow + "/" + Avatar.hound.hpMax + "\n" + Avatar.hound.shield;
 		
 	}
 }

@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Freya {
-	public int hpNow, hpMax;
-	public Freya(int newHP)
+	public int hpNow, hpMax, shield;
+
+	public Freya(int newHP, int newShield)
 	{
 		hpMax = newHP;
 		hpNow = newHP;
+		shield = newShield;
 	}
 }
