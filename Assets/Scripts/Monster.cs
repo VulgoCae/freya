@@ -5,8 +5,9 @@ using UnityEngine;
 public class Monster {
 
 	public string name;
+
 	public int hpNow, hpMax, shield, trigger, attack, power;
-	
+
 	public Monster(string newName, int newHP, int newShield, int newTrigger, int newAttack, int newPower)
 	{
 		name = newName;
