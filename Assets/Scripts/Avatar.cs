@@ -10,10 +10,8 @@ public class Avatar : MonoBehaviour {
 	
 	void Start () {
 
-		Methods.MainLoad();
 		Methods.DebugLogs();
 		Methods.CombosLoad();
-		Debug.Log(Combat.comboList[0]);
 	
 	}
 	

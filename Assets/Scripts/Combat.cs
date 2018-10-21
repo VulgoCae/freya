@@ -6,7 +6,10 @@ public class Combat : MonoBehaviour {
 
 	public static List<int> actions = new List<int>();
 	public static List<int> comboLine = new List<int>();
-	public static List<string> comboList = new List<string>();
+	public static List<string> comboListCode = new List<string>();
+	public static List<Combos> comboList = new List<Combos>();
+
+	int distance;
 	
 	void Start () {
 		
