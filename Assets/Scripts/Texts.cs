@@ -14,7 +14,9 @@ public class Texts : MonoBehaviour {
 	void Update () {
 		
 		freyaTexts.text = Avatar.freya.hpNow + "/" + Avatar.freya.hpMax + "\n" + Avatar.freya.shield;
-		monsterTexts.text = Avatar.hound.hpNow + "/" + Avatar.hound.hpMax + "\n" + Avatar.hound.shield;
+		monsterTexts.text = Avatar.hound.hpNow + "/" + Avatar.hound.hpMax + "\n" + Avatar.hound.shield
+							+ "\nRage: " + Avatar.hound.rageNow + "/" + Avatar.hound.rageMax
+							+ "\nRank: " + Avatar.hound.rank;
 		
 	}
 }

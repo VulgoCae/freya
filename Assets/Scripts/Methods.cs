@@ -12,12 +12,26 @@ public class Methods {
 	public static int lastComboIndex;
 	public static bool comboIsReady;
 	
+	public static void ConfirmCombo()
+	{
+		if(comboIsReady == true)
+		{
+			Debug.Log(Combat.comboList[lastComboIndex].name + " has been used!");
+			ClearComboLine();
+		}
+
+		if(comboIsReady == false)
+		{
+			ClearComboLine();
+		}
+	}
 
 	public static void ClearComboLine()
 	{
 		Combat.comboLine.Clear();
 		Debug.Log("ComboLine has been cleared");
 	}
+	
 	public static void ComboLineToString()
 	{
 		comboForCheck = null;
@@ -40,7 +54,6 @@ public class Methods {
 					{
 						checkerLock = true;
 						lastComboIndex = index;
-
 					}
 					index ++;
 				}

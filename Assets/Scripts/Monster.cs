@@ -6,16 +6,17 @@ public class Monster {
 
 	public string name;
 
-	public int hpNow, hpMax, shield, trigger, attack, power;
+	public int hpNow, hpMax, shield, rageNow, rageMax, attack, rank;
 
-	public Monster(string newName, int newHP, int newShield, int newTrigger, int newAttack, int newPower)
+	public Monster(string newName, int newHP, int newShield, int newRage, int newAttack, int newRank)
 	{
 		name = newName;
 		hpNow = newHP;
 		hpMax = newHP;
 		shield = newShield;
-		trigger = newTrigger;
+		rageMax = newRage;
+		rageNow = 0;
 		attack = newAttack;
-		power = newPower;
+		rank = newRank;
 	}
 }

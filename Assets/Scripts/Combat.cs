@@ -9,7 +9,7 @@ public class Combat : MonoBehaviour {
 	public static List<string> comboListCode = new List<string>();
 	public static List<Combos> comboList = new List<Combos>();
 
-	int distance;
+	public static int distance;
 	
 	void Start () {
 		

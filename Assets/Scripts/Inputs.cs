@@ -16,16 +16,20 @@ public class Inputs : MonoBehaviour {
 			comboCheckerText.text = "Combo " + Combat.comboList[Methods.lastComboIndex].name + " is ready!";
 			Methods.comboIsReady = false;
 		}
-		else comboCheckerText.text = "";
+		if(Methods.comboIsReady == false)
+		{
+			comboCheckerText.text = "";
+		}
 	}
 
 	public void ClearComboLineText()
 	{
 		comboLineText.text = "";
 	}
+
 	public void ComboLineWriter()
 	{
-		comboLineText.text = "";
+		ClearComboLineText();
 		foreach(int i in Combat.comboLine)
 		{	
 			comboLineText.text += i.ToString();
@@ -35,7 +39,13 @@ public class Inputs : MonoBehaviour {
 
 	public void ConfirmLine()
 	{
-
+		ComboLineWriter();
+		Methods.ComboLineToString();
+		Methods.ComboChecker();
+		Methods.ResultChecker();
+		Methods.ConfirmCombo();
+		ComboLineWriter();
+		
 	}
 
 	public void AddActionToLine(int index)
@@ -48,7 +58,6 @@ public class Inputs : MonoBehaviour {
 		Methods.ResultChecker();
 		ComboCheckerWriter();
 	}
-
 
 	void Start () {
 		
