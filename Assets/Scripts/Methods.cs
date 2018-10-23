@@ -12,10 +12,17 @@ public class Methods {
 	public static int lastComboIndex;
 	public static bool comboIsReady;
 	
+	public static void DistanceUpdate()
+	{
+		Combat.distance += Combat.comboList[lastComboIndex].move;
+	}
+
 	public static void ConfirmCombo()
 	{
 		if(comboIsReady == true)
 		{
+			DistanceUpdate();
+			Debug.Log(Combat.distance);
 			Debug.Log(Combat.comboList[lastComboIndex].name + " has been used!");
 			ClearComboLine();
 		}
@@ -81,10 +88,10 @@ public class Methods {
 
 	public static void CombosLoad()
 	{
-		Combos deepBreath = new Combos("Deep Breath", "111", 3);
-		Combos rollout = new Combos("Rollout", "121", 2);
-		Combos upperCut = new Combos("Uppercut", "123", 0);
-		Combos flyingKick = new Combos("Flying Kick", "224", 2);
+		Combos deepBreath = new Combos("Deep Breath", "111", 3, 0, 2, 5, 0);
+		Combos rollout = new Combos("Rollout", "121", 2, 1, 1, 4, 0);
+		Combos upperCut = new Combos("Uppercut", "123", 0, -1, 1, 0, 4);
+		Combos flyingKick = new Combos("Flying Kick", "224", 4, -2, 3, 0, 11 );
 
 		Combat.comboList.Add(deepBreath);
 		Combat.comboList.Add(rollout);

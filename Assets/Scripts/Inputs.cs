@@ -8,6 +8,7 @@ public class Inputs : MonoBehaviour {
 	public Text comboLineText;
 	public Text comboCheckerText;
 	public int i = 0;
+
 	
 	public void ComboCheckerWriter()
 	{

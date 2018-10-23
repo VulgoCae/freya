@@ -7,12 +7,14 @@ public class Texts : MonoBehaviour {
 
 	public Text monsterTexts;
 
+	public Text distanceText;
+
 	void Start () {
 		
 	}
 	
 	void Update () {
-		
+		distanceText.text = Combat.distance.ToString();
 		freyaTexts.text = Avatar.freya.hpNow + "/" + Avatar.freya.hpMax + "\n" + Avatar.freya.shield;
 		monsterTexts.text = Avatar.hound.hpNow + "/" + Avatar.hound.hpMax + "\n" + Avatar.hound.shield
 							+ "\nRage: " + Avatar.hound.rageNow + "/" + Avatar.hound.rageMax
