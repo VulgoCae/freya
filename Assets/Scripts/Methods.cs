@@ -11,7 +11,7 @@ public class Methods {
 	public static bool checkerLock;
 	public static int lastComboIndex;
 	public static bool comboIsReady;
-	
+	public static int monsterIndex = 0;
 	public static void DistanceUpdate()
 	{
 		Combat.distance += Combat.comboList[lastComboIndex].move;
@@ -23,6 +23,7 @@ public class Methods {
 		{
 			DistanceUpdate();
 			Debug.Log(Combat.distance);
+			Monster.HPUpdate();
 			Debug.Log(Combat.comboList[lastComboIndex].name + " has been used!");
 			ClearComboLine();
 		}
@@ -108,6 +109,7 @@ public class Methods {
 		Combat.actions.Add(3);
 		Combat.actions.Add(4);
 	}
+
 
 	public static void DebugLogs()
 	{

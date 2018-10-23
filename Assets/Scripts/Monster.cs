@@ -8,6 +8,11 @@ public class Monster {
 
 	public int hpNow, hpMax, shield, rageNow, rageMax, attack, rank;
 
+	public static void HPUpdate()
+	{
+		Avatar.monsterList[Methods.monsterIndex].hpNow -= Combat.comboList[Methods.lastComboIndex].atk;
+	}
+
 	public Monster(string newName, int newHP, int newShield, int newRage, int newAttack, int newRank)
 	{
 		name = newName;
