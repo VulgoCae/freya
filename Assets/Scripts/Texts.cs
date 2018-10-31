@@ -15,8 +15,8 @@ public class Texts : MonoBehaviour {
 	
 	void Update () {
 		distanceText.text = Combat.distance.ToString();
-		freyaTexts.text = Avatar.freya.hpNow + "/" + Avatar.freya.hpMax + "\n" + Avatar.freya.shield;
-		monsterTexts.text = Avatar.hound.hpNow + "/" + Avatar.hound.hpMax + "\n" + Avatar.hound.shield
+		freyaTexts.text = Avatar.freya.hpNow + "/" + Avatar.freya.hpMax + "\n" + Avatar.freya.dodge;
+		monsterTexts.text = Avatar.hound.hpNow + "/" + Avatar.hound.hpMax + "\n" + Avatar.hound.dodge
 							+ "\nRage: " + Avatar.hound.rageNow + "/" + Avatar.hound.rageMax
 							+ "\nRank: " + Avatar.hound.rank;
 		

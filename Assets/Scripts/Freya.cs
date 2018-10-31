@@ -4,18 +4,27 @@ using UnityEngine;
 
 public class Freya {
 
-	public int hpNow, hpMax, shield;
+	public int hpNow, hpMax, dodge;
 
 	public static void HPUpdate()
 	{
-		Avatar.freya.hpNow += Combat.comboList[Methods.lastComboIndex].atk;
+		if(Monster.actionReady == true)
+		{
+			//falta dodge
+			Avatar.freya.hpNow -= Avatar.monsterList[Methods.monsterIndex].atk;			
+			Monster.actionReady = false;
+		}
+		if(Monster.rageTrigger == true)
+		{
+			Monster.LoadAction();
+		}
 	}
 
 
-	public Freya(int newHP, int newShield)
+	public Freya(int newHP, int newDodge)
 	{
 		hpMax = newHP;
 		hpNow = newHP;
-		shield = newShield;
+		dodge = newDodge;
 	}
 }

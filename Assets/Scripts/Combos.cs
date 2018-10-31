@@ -6,16 +6,16 @@ public class Combos {
 
 	public string name, code;
 	
-	public int crit, move, rage, shield, atk;
+	public int crit, move, rage, dodge, atk;
 	
-	public Combos(string newName, string newCode, int newCrit, int newMove, int newRage, int newShield, int newAtk)
+	public Combos(string newName, string newCode, int newCrit, int newMove, int newRage, int newDodge, int newAtk)
 	{
 		name = newName;
 		code = newCode;
 		crit = newCrit;
 		move = newMove;
 		rage = newRage;
-		shield = newShield;
+		dodge = newDodge;
 		atk = newAtk;
 	}
 

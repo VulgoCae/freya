@@ -12,17 +12,24 @@ public class Methods {
 	public static int lastComboIndex;
 	public static bool comboIsReady;
 	public static int monsterIndex = 0;
+
+	public static void DistanceNormalize()
+	{
+		if(Combat.distance < 0)
+		{
+			Combat.distance = 0;
+		}
+	}
 	public static void DistanceUpdate()
 	{
 		Combat.distance += Combat.comboList[lastComboIndex].move;
 	}
-
 	public static void ConfirmCombo()
 	{
 		if(comboIsReady == true)
 		{
 			DistanceUpdate();
-			Debug.Log(Combat.distance);
+			DistanceNormalize();
 			Monster.HPUpdate();
 			Debug.Log(Combat.comboList[lastComboIndex].name + " has been used!");
 			ClearComboLine();
@@ -33,13 +40,11 @@ public class Methods {
 			ClearComboLine();
 		}
 	}
-
 	public static void ClearComboLine()
 	{
 		Combat.comboLine.Clear();
 		Debug.Log("ComboLine has been cleared");
 	}
-	
 	public static void ComboLineToString()
 	{
 		comboForCheck = null;
@@ -48,7 +53,6 @@ public class Methods {
 			comboForCheck += i.ToString();
 		}
 	}
-
 	public static void ComboChecker()
 	{
 		while(result == false && index < 4)
@@ -62,6 +66,7 @@ public class Methods {
 					{
 						checkerLock = true;
 						lastComboIndex = index;
+						comboIsReady = true;
 					}
 					index ++;
 				}
@@ -70,7 +75,6 @@ public class Methods {
 		index = 0;
 		checkerLock = false;
 	}
-
 	public static void ResultChecker()
 	{
 		if(result == false)
@@ -86,7 +90,19 @@ public class Methods {
 		}
 
 	}
+	public static void ActionsLoad()
+	{
+		Actions action01 = new Actions("ActionName1", 1, 1);
+		Actions action02 = new Actions("ActionName2", 2, 2);
+		Actions action03 = new Actions("ActionName3", 3, 3);
+		Actions action04 = new Actions("ActionName4", 4, 4);
 
+		Combat.actionList.Add(action01);
+		Combat.actionList.Add(action02);
+		Combat.actionList.Add(action03);
+		Combat.actionList.Add(action04);
+
+	}
 	public static void CombosLoad()
 	{
 		Combos deepBreath = new Combos("Deep Breath", "111", 3, 0, 2, 5, 0);
@@ -109,8 +125,6 @@ public class Methods {
 		Combat.actions.Add(3);
 		Combat.actions.Add(4);
 	}
-
-
 	public static void DebugLogs()
 	{
 		/* foreach(int i in Combat.actions)
@@ -118,7 +132,6 @@ public class Methods {
 			Debug.Log(i);
 		}*/
 	}
-
 	public static void ComboLineLength()
 	{
 		if(Combat.comboLine.Count > 7)

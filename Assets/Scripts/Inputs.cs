@@ -9,18 +9,23 @@ public class Inputs : MonoBehaviour {
 	public Text comboCheckerText;
 	public int i = 0;
 
-	
+	public void ComboUsedWriter()
+	{
+		comboCheckerText.text = "Combo " + Combat.comboList[Methods.lastComboIndex].name + " has been used!";
+	}
+
 	public void ComboCheckerWriter()
 	{
 		if(Methods.comboIsReady == true)
 		{
 			comboCheckerText.text = "Combo " + Combat.comboList[Methods.lastComboIndex].name + " is ready!";
-			Methods.comboIsReady = false;
 		}
 		if(Methods.comboIsReady == false)
 		{
 			comboCheckerText.text = "";
 		}
+		Methods.comboIsReady = false;
+
 	}
 
 	public void ClearComboLineText()
@@ -46,7 +51,8 @@ public class Inputs : MonoBehaviour {
 		Methods.ResultChecker();
 		Methods.ConfirmCombo();
 		ComboLineWriter();
-		
+		ComboCheckerWriter();
+		ComboUsedWriter();
 	}
 
 	public void AddActionToLine(int index)
@@ -60,6 +66,12 @@ public class Inputs : MonoBehaviour {
 		ComboCheckerWriter();
 	}
 
+	public void ClearComboLine()
+	{
+		Combat.comboLine.Clear();
+		ComboLineWriter();
+		ComboCheckerWriter();
+	}
 	void Start () {
 		
 	}
