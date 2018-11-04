@@ -24,7 +24,6 @@ public class Inputs : MonoBehaviour {
 		{
 			comboCheckerText.text = "";
 		}
-		Methods.comboIsReady = false;
 
 	}
 
@@ -45,9 +44,6 @@ public class Inputs : MonoBehaviour {
 
 	public void ConfirmLine()
 	{
-		ComboLineWriter();
-		Methods.ComboLineToString();
-		Methods.ComboChecker();
 		Methods.ResultChecker();
 		Methods.ConfirmCombo();
 		ComboLineWriter();

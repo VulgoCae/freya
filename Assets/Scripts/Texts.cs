@@ -3,9 +3,11 @@ using UnityEngine.UI;
 
 public class Texts : MonoBehaviour {
 
-	public Text freyaTexts;
+	public Text freyaHP;
+	public Text freyaDodge;
 
-	public Text monsterTexts;
+	public Text monsterHPRange;
+	public Text monsterDodge;
 
 	public Text distanceText;
 
@@ -15,10 +17,11 @@ public class Texts : MonoBehaviour {
 	
 	void Update () {
 		distanceText.text = Combat.distance.ToString();
-		freyaTexts.text = Avatar.freya.hpNow + "/" + Avatar.freya.hpMax + "\n" + Avatar.freya.dodge;
-		monsterTexts.text = Avatar.hound.hpNow + "/" + Avatar.hound.hpMax + "\n" + Avatar.hound.dodge
-							+ "\nRage: " + Avatar.hound.rageNow + "/" + Avatar.hound.rageMax
-							+ "\nRank: " + Avatar.hound.rank;
-		
+		freyaHP.text = Avatar.freya.hpNow + "/" + Avatar.freya.hpMax;
+		freyaDodge.text =  Avatar.freya.dodge.ToString();
+		monsterHPRange.text = Avatar.monsterList[Methods.monsterIndex].hpNow + "/" + Avatar.monsterList[Methods.monsterIndex].hpMax +
+		"\n" + Avatar.monsterList[Methods.monsterIndex].rageNow + "/" + Avatar.monsterList[Methods.monsterIndex].rageMax;
+		monsterDodge.text =  Avatar.monsterList[Methods.monsterIndex].dodge.ToString()
+		+"\n" + Avatar.monsterList[Methods.monsterIndex].atk.ToString();
 	}
 }

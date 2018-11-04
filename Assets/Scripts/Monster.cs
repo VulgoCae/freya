@@ -9,6 +9,7 @@ public class Monster {
 	public static bool actionReady;
 	public string name;
 	public int hpNow, hpMax, dodge, rageNow, rageMax, atk, rank;
+
 	public static void LoadAction()
 	{
 		if(rageTrigger == true)
@@ -17,32 +18,37 @@ public class Monster {
 			Combat.actionList[actionIndex].atk;
 			Avatar.monsterList[Methods.monsterIndex].dodge +=
 			Combat.actionList[actionIndex].dodge;
-			actionReady = true;
+			if(Avatar.monsterList[Methods.monsterIndex].rageNow >= 
+			   Avatar.monsterList[Methods.monsterIndex].rageMax)
+			{
+				Avatar.monsterList[Methods.monsterIndex].rageNow = 0;
+			}
 		}
 	}
 
-	public static void RageChecker()
+	public static void RageUpdate()
 	{
+		Avatar.monsterList[Methods.monsterIndex].rageNow += 
+		Combat.comboList[Methods.lastComboIndex].rage;
+	
 		if( Avatar.monsterList[Methods.monsterIndex].rageNow >=
 			Avatar.monsterList[Methods.monsterIndex].rageMax)
 			{
 				
 				rageTrigger = true;
-			};
-	}
-	public static void RageUpdate()
-	{
-		Avatar.monsterList[Methods.monsterIndex].rageNow += 
-		Combat.comboList[Methods.lastComboIndex].rage;
+				actionReady = true;
+			}
+		Debug.Log("rage trigger: " + rageTrigger);
 	}
 
 	public static void HPUpdate()
 	{
-
-		Avatar.monsterList[Methods.monsterIndex].hpNow -=
-		(Combat.comboList[Methods.lastComboIndex].atk - Avatar.monsterList[Methods.monsterIndex].dodge);
-		DodgeUpdate();
-
+		if(Combat.comboList[Methods.lastComboIndex].atk != 0)
+		{
+			Avatar.monsterList[Methods.monsterIndex].hpNow -=
+			(Combat.comboList[Methods.lastComboIndex].atk - Avatar.monsterList[Methods.monsterIndex].dodge);
+			DodgeUpdate();
+		}
 	}
 
 	public static void DodgeUpdate()

@@ -25,25 +25,29 @@ public class Methods {
 		Combat.distance += Combat.comboList[lastComboIndex].move;
 	}
 	public static void ConfirmCombo()
-	{
+	{	
 		if(comboIsReady == true)
 		{
 			DistanceUpdate();
 			DistanceNormalize();
 			Monster.HPUpdate();
+			Monster.RageUpdate();
+			Freya.HPUpdate();
 			Debug.Log(Combat.comboList[lastComboIndex].name + " has been used!");
 			ClearComboLine();
+			comboIsReady = false;
 		}
 
 		if(comboIsReady == false)
 		{
 			ClearComboLine();
+			result = false;
+			checkerLock = false;
 		}
 	}
 	public static void ClearComboLine()
 	{
 		Combat.comboLine.Clear();
-		Debug.Log("ComboLine has been cleared");
 	}
 	public static void ComboLineToString()
 	{
@@ -66,26 +70,22 @@ public class Methods {
 					{
 						checkerLock = true;
 						lastComboIndex = index;
-						comboIsReady = true;
 					}
 					index ++;
 				}
 			}
 		}
 		index = 0;
-		checkerLock = false;
 	}
 	public static void ResultChecker()
 	{
 		if(result == false)
 		{
-			Debug.Log("NOT NICE COMBO");
+			comboIsReady = false;
 		}
 		if(result == true && Combat.comboList[lastComboIndex] != null)
 		{
-			Debug.Log("Combo " + Combat.comboList[lastComboIndex].name + " is ready!");
 			comboIsReady = true;
-			result = false;
 
 		}
 

@@ -8,18 +8,20 @@ public class Freya {
 
 	public static void HPUpdate()
 	{
+		Debug.Log("action ready: " + Monster.actionReady);
 		if(Monster.actionReady == true)
 		{
-			//falta dodge
-			Avatar.freya.hpNow -= Avatar.monsterList[Methods.monsterIndex].atk;			
-			Monster.actionReady = false;
-		}
-		if(Monster.rageTrigger == true)
-		{
 			Monster.LoadAction();
+			Avatar.freya.hpNow -= (Avatar.monsterList[Methods.monsterIndex].atk -
+								   Avatar.freya.dodge);
+			if(Avatar.freya.dodge <= Avatar.monsterList[Methods.monsterIndex].atk)
+			{
+				Avatar.freya.dodge = 0;
+			}			
+			Monster.actionReady = false;
+			
 		}
 	}
-
 
 	public Freya(int newHP, int newDodge)
 	{

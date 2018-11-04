@@ -113,6 +113,82 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &104044677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 104044678}
+  - component: {fileID: 104044680}
+  - component: {fileID: 104044679}
+  m_Layer: 5
+  m_Name: FreyaDodge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &104044678
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 104044677}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99983776, y: 0.99983776, z: 0.99983776}
+  m_Children: []
+  m_Father: {fileID: 373593340}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -136.39995, y: 140.45}
+  m_SizeDelta: {x: 117.18, y: 21.21}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &104044679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 104044677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 13
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 2
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.74
+  m_Text: 'freya dodge
+
+'
+--- !u!222 &104044680
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 104044677}
 --- !u!1 &172133541
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -78.75001, y: 9.656398}
+  m_AnchoredPosition: {x: -85.6, y: -3.1}
   m_SizeDelta: {x: 427, y: 449}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172133543
@@ -234,74 +310,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 172133541}
---- !u!1 &230328271
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 230328272}
-  - component: {fileID: 230328274}
-  - component: {fileID: 230328273}
-  m_Layer: 5
-  m_Name: HP_DEF_monster
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &230328272
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 230328271}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
-  m_Children: []
-  m_Father: {fileID: 1509249252}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 307.6, y: 130.2}
-  m_SizeDelta: {x: 2497, y: 703}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &230328273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 230328271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a5fd09cff432d3b428c867a437678289, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &230328274
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 230328271}
 --- !u!1 &279992957
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,7 +395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 78.75, y: 9.656352}
+  m_AnchoredPosition: {x: 71.90001, y: -3.100051}
   m_SizeDelta: {x: 427, y: 449}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &282154817
@@ -506,8 +514,10 @@ RectTransform:
   - {fileID: 2140330470}
   - {fileID: 1832477421}
   - {fileID: 579525393}
+  - {fileID: 104044678}
+  - {fileID: 1981068692}
   m_Father: {fileID: 1509249252}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -525,8 +535,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad59e0caf412dc745b8ecfd4e3aa4908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  freyaTexts: {fileID: 1037579696}
-  monsterTexts: {fileID: 429809877}
+  freyaHP: {fileID: 1037579696}
+  freyaDodge: {fileID: 104044679}
+  monsterHPRange: {fileID: 429809877}
+  monsterDodge: {fileID: 1981068693}
   distanceText: {fileID: 579525394}
 --- !u!1 &386271520
 GameObject:
@@ -576,7 +588,7 @@ GameObject:
   - component: {fileID: 429809878}
   - component: {fileID: 429809877}
   m_Layer: 5
-  m_Name: MonsterTexts
+  m_Name: MonsterHPRage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -597,8 +609,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 298.92, y: 75.523}
-  m_SizeDelta: {x: 137.18, y: 151.07}
+  m_AnchoredPosition: {x: 298.92, y: 121.22}
+  m_SizeDelta: {x: 137.18, y: 59.655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &429809877
 MonoBehaviour:
@@ -632,7 +644,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.74
-  m_Text: monster texts
+  m_Text: "monster hp \nrage"
 --- !u!222 &429809878
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -769,7 +781,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0f594943bc977b34382f66b3adc34798, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff50e570359a13640b3f76f09e54812c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -878,7 +890,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -208.9964, y: -169.94359}
+  m_AnchoredPosition: {x: -213, y: -179.6}
   m_SizeDelta: {x: 882.3, y: 505.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996529316
@@ -966,7 +978,7 @@ GameObject:
   - component: {fileID: 1037579697}
   - component: {fileID: 1037579696}
   m_Layer: 5
-  m_Name: FreyaTexts
+  m_Name: FreyaHP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1004,7 +1016,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.74
-  m_Text: freyas texts
+  m_Text: freya hp
 --- !u!222 &1037579697
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1026,8 +1038,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -299.32, y: 127.8}
-  m_SizeDelta: {x: 137.18, y: 46.5}
+  m_AnchoredPosition: {x: -299.32, y: 140.45}
+  m_SizeDelta: {x: 137.18, y: 21.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1093389265
 GameObject:
@@ -1062,7 +1074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 264.0036, y: -169.94359}
+  m_AnchoredPosition: {x: 259, y: -179.6}
   m_SizeDelta: {x: 1497.1, y: 505.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1093389267
@@ -1330,7 +1342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -26.250002, y: 9.656387}
+  m_AnchoredPosition: {x: -33.09999, y: -3.1000156}
   m_SizeDelta: {x: 427, y: 449}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1414972537
@@ -1451,7 +1463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.25, y: 9.656367}
+  m_AnchoredPosition: {x: 19.40001, y: -3.1000357}
   m_SizeDelta: {x: 427, y: 449}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1502923486
@@ -1631,8 +1643,6 @@ RectTransform:
   - {fileID: 1277277637}
   - {fileID: 1278399959}
   - {fileID: 386271521}
-  - {fileID: 2115476444}
-  - {fileID: 230328272}
   - {fileID: 2009830282}
   - {fileID: 373593340}
   m_Father: {fileID: 0}
@@ -1708,8 +1718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.7, y: 88.6}
-  m_SizeDelta: {x: 190.8, y: 60.8}
+  m_AnchoredPosition: {x: 7.6, y: 61}
+  m_SizeDelta: {x: 229, y: 60.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1832477422
 MonoBehaviour:
@@ -1752,6 +1762,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1832477420}
+--- !u!1 &1981068691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1981068692}
+  - component: {fileID: 1981068694}
+  - component: {fileID: 1981068693}
+  m_Layer: 5
+  m_Name: MonsterDodge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1981068692
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981068691}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99983776, y: 0.99983776, z: 0.99983776}
+  m_Children: []
+  m_Father: {fileID: 373593340}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 140.6, y: 121.22}
+  m_SizeDelta: {x: 137.18, y: 59.655}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1981068693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981068691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 13
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.74
+  m_Text: "monster hp \nrage"
+--- !u!222 &1981068694
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981068691}
 --- !u!1 &2009830281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,7 +1863,7 @@ RectTransform:
   m_LocalScale: {x: 0.6630226, y: 0.6630227, z: 0.6630227}
   m_Children: []
   m_Father: {fileID: 1509249252}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1912,74 +1996,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2115476443
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2115476444}
-  - component: {fileID: 2115476446}
-  - component: {fileID: 2115476445}
-  m_Layer: 5
-  m_Name: HP_DEF_freya
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2115476444
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2115476443}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -0.1341886, y: 0.13418847, z: 0.13418847}
-  m_Children: []
-  m_Father: {fileID: 1509249252}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -310.8, y: 130.2}
-  m_SizeDelta: {x: 1248, y: 351}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2115476445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2115476443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a5fd09cff432d3b428c867a437678289, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &2115476446
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2115476443}
 --- !u!1 &2120834487
 GameObject:
   m_ObjectHideFlags: 0
@@ -2013,7 +2029,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -331.4964, y: -169.24359}
+  m_AnchoredPosition: {x: -333, y: -179.05}
   m_SizeDelta: {x: 479.9, y: 504.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2120834489
@@ -2133,7 +2149,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.3, y: -123.8}
+  m_AnchoredPosition: {x: -15.1, y: -139.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140330471
