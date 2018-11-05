@@ -12,6 +12,22 @@ public class Methods {
 	public static int lastComboIndex;
 	public static bool comboIsReady;
 	public static int monsterIndex = 0;
+
+	public static void HPChecker()
+	{
+		Debug.Log("monster hp:" + Avatar.monsterList[Methods.monsterIndex].hpNow);
+		if(Avatar.freya.hpNow <= 0)
+		{
+			Debug.Log("Game Over");
+
+		}
+		if(Avatar.monsterList[Methods.monsterIndex].hpNow <= 0)
+		{
+			Debug.Log("monster < 0");
+			Methods.monsterIndex ++;
+		}
+	}
+
 	public static void DistanceNormalize()
 	{
 		if(Combat.distance < 0)
@@ -58,25 +74,29 @@ public class Methods {
 	public static void ComboChecker()
 	{
 		ComboLineToString();
-		foreach(string i in Combat.comboListCode)
+		if(comboForCheck != null)
 		{
-			if(checkerLock == false)
+			foreach(string i in Combat.comboListCode)
 			{
-				result = comboForCheck.Equals(Combat.comboListCode[index]);
-				if(result == true)
+				if(checkerLock == false)
 				{
-					checkerLock = true;
-					lastComboIndex = index;
+					result = comboForCheck.Equals(Combat.comboListCode[index]);
+					if(result == true)
+					{
+						checkerLock = true;
+						lastComboIndex = index;
+					}
+					if(result == false)
+					{
+						result = false;
+						checkerLock = false;
+					}
+					index ++;
+					
 				}
-				if(result == false)
-				{
-					result = false;
-					checkerLock = false;
-				}
-				index ++;
-				
 			}
 		}
+
 		ResultChecker();
 
 		index = 0;

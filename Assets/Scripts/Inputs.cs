@@ -43,13 +43,12 @@ public class Inputs : MonoBehaviour {
 
 	public void ConfirmLine()
 	{
-		//Methods.ResultChecker();
 		Methods.ConfirmCombo();
 		ComboLineWriter();
 		ComboCheckerWriter();
 		ComboUsedWriter();
 		Methods.ComboChecker();
-		//Methods.ResultChecker();
+		Methods.HPChecker();
 	}
 
 	public void AddActionToLine(int index)

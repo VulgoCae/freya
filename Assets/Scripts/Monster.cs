@@ -38,7 +38,6 @@ public class Monster {
 				rageTrigger = true;
 				actionReady = true;
 			}
-		Debug.Log("rage trigger: " + rageTrigger);
 	}
 
 	public static void HPUpdate()
