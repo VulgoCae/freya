@@ -9,6 +9,7 @@ public class Inputs : MonoBehaviour {
 	public Text comboCheckerText;
 	public int i = 0;
 
+
 	public void ComboUsedWriter()
 	{
 		comboCheckerText.text = "Combo " + Combat.comboList[Methods.lastComboIndex].name + " has been used!";
@@ -49,6 +50,8 @@ public class Inputs : MonoBehaviour {
 		ComboLineWriter();
 		ComboCheckerWriter();
 		ComboUsedWriter();
+		Methods.ResultChecker();
+
 	}
 
 	public void AddActionToLine(int index)
@@ -60,6 +63,8 @@ public class Inputs : MonoBehaviour {
 		Methods.ComboChecker();
 		Methods.ResultChecker();
 		ComboCheckerWriter();
+		Methods.ResultChecker();
+
 	}
 
 	public void ClearComboLine()

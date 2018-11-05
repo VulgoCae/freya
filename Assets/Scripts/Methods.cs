@@ -33,9 +33,11 @@ public class Methods {
 			Monster.HPUpdate();
 			Monster.RageUpdate();
 			Freya.HPUpdate();
-			Debug.Log(Combat.comboList[lastComboIndex].name + " has been used!");
 			ClearComboLine();
 			comboIsReady = false;
+			checkerLock = false;
+			result = false;
+
 		}
 
 		if(comboIsReady == false)
@@ -76,6 +78,10 @@ public class Methods {
 			}
 		}
 		index = 0;
+		if(checkerLock == false)
+		{
+			result = false;
+		}
 	}
 	public static void ResultChecker()
 	{
