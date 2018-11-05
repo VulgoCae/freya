@@ -12,7 +12,6 @@ public class Methods {
 	public static int lastComboIndex;
 	public static bool comboIsReady;
 	public static int monsterIndex = 0;
-
 	public static void DistanceNormalize()
 	{
 		if(Combat.distance < 0)
