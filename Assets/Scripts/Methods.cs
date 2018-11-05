@@ -34,22 +34,19 @@ public class Methods {
 			Monster.RageUpdate();
 			Freya.HPUpdate();
 			ClearComboLine();
-			comboIsReady = false;
-			checkerLock = false;
-			result = false;
-
 		}
 
 		if(comboIsReady == false)
 		{
 			ClearComboLine();
-			result = false;
-			checkerLock = false;
 		}
 	}
 	public static void ClearComboLine()
 	{
 		Combat.comboLine.Clear();
+		comboIsReady = false;
+		checkerLock = false;
+		result = false;
 	}
 	public static void ComboLineToString()
 	{
@@ -61,40 +58,43 @@ public class Methods {
 	}
 	public static void ComboChecker()
 	{
-		while(result == false && index < 4)
+		ComboLineToString();
+		foreach(string i in Combat.comboListCode)
 		{
-			foreach(string i in Combat.comboListCode)
+			if(checkerLock == false)
 			{
-				if(checkerLock == false)
+				result = comboForCheck.Equals(Combat.comboListCode[index]);
+				if(result == true)
 				{
-					result = comboForCheck.Equals(Combat.comboListCode[index]);
-					if(result == true)
-					{
-						checkerLock = true;
-						lastComboIndex = index;
-					}
-					index ++;
+					checkerLock = true;
+					lastComboIndex = index;
 				}
+				if(result == false)
+				{
+					result = false;
+					checkerLock = false;
+				}
+				index ++;
+				
 			}
 		}
+		ResultChecker();
+
 		index = 0;
-		if(checkerLock == false)
-		{
-			result = false;
-		}
+		Debug.Log("result: " + result);
 	}
 	public static void ResultChecker()
 	{
 		if(result == false)
 		{
 			comboIsReady = false;
+			checkerLock = false;
+			result = false;
 		}
-		if(result == true && Combat.comboList[lastComboIndex] != null)
+		if(result == true)
 		{
 			comboIsReady = true;
-
 		}
-
 	}
 	public static void ActionsLoad()
 	{
@@ -114,7 +114,7 @@ public class Methods {
 		Combos deepBreath = new Combos("Deep Breath", "111", 3, 0, 2, 5, 0);
 		Combos rollout = new Combos("Rollout", "121", 2, 1, 1, 4, 0);
 		Combos upperCut = new Combos("Uppercut", "123", 0, -1, 1, 0, 4);
-		Combos flyingKick = new Combos("Flying Kick", "224", 4, -2, 3, 0, 11 );
+		Combos flyingKick = new Combos("Flying Kick", "224", 4, -2, 3, 0, 11);
 
 		Combat.comboList.Add(deepBreath);
 		Combat.comboList.Add(rollout);
@@ -142,7 +142,7 @@ public class Methods {
 	{
 		if(Combat.comboLine.Count > 7)
 		{
-			Combat.comboLine.Clear();
+			ClearComboLine();
 		}
 	}
 

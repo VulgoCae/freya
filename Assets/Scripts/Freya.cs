@@ -22,7 +22,6 @@ public class Freya {
 				Avatar.freya.dodge = 0;
 			}
 			Monster.actionReady = false;
-			
 		}
 	}
 

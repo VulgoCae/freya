@@ -9,7 +9,6 @@ public class Inputs : MonoBehaviour {
 	public Text comboCheckerText;
 	public int i = 0;
 
-
 	public void ComboUsedWriter()
 	{
 		comboCheckerText.text = "Combo " + Combat.comboList[Methods.lastComboIndex].name + " has been used!";
@@ -25,7 +24,6 @@ public class Inputs : MonoBehaviour {
 		{
 			comboCheckerText.text = "";
 		}
-
 	}
 
 	public void ClearComboLineText()
@@ -45,33 +43,41 @@ public class Inputs : MonoBehaviour {
 
 	public void ConfirmLine()
 	{
-		Methods.ResultChecker();
+		//Methods.ResultChecker();
 		Methods.ConfirmCombo();
 		ComboLineWriter();
 		ComboCheckerWriter();
 		ComboUsedWriter();
-		Methods.ResultChecker();
-
+		Methods.ComboChecker();
+		//Methods.ResultChecker();
 	}
 
 	public void AddActionToLine(int index)
+	{
+		Methods.result = false;
+		Methods.ComboLineLength();
+		Combat.comboLine.Add(Combat.actions[index]);
+		ComboLineWriter();
+		Methods.ComboChecker();
+		ComboCheckerWriter();
+	}
+	/* public void AddActionToLine(int index)
 	{
 		Methods.ComboLineLength();
 		Combat.comboLine.Add(Combat.actions[index]);
 		ComboLineWriter();
 		Methods.ComboLineToString();
 		Methods.ComboChecker();
-		Methods.ResultChecker();
+		//Methods.ResultChecker();
 		ComboCheckerWriter();
-		Methods.ResultChecker();
-
-	}
-
+	}*/
 	public void ClearComboLine()
 	{
 		Combat.comboLine.Clear();
 		ComboLineWriter();
 		ComboCheckerWriter();
+		Methods.comboIsReady = false;
+		
 	}
 	void Start () {
 		

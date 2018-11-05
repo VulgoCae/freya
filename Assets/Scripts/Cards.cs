@@ -12,7 +12,8 @@ public class Cards : MonoBehaviour {
 
 	public void OnClick(GameObject gameObj)
 	{
-		Debug.Log("comboisready: " + Methods.comboIsReady);
+		//Debug.Log("comboisready: " + Methods.comboIsReady);
+		//Debug.Log("lastcomboindex: " + Methods.lastComboIndex);
 		if(Methods.comboIsReady == true)
 		{
 			cardsList[Methods.lastComboIndex].gameObject.SetActive(true);
