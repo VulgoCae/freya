@@ -1,12 +1,11 @@
 fileFormatVersion: 2
-guid: 99626060ea940bd42b31319fda32f37f
+guid: 10d5ac3b617ee4e4585bfead1a437594
 TextureImporter:
   fileIDToRecycleName:
-    21300000: diary_markers_0
-    21300002: diary_markers_1
-    21300004: diary_markers_2
-    21300006: diary_markers_3
-    21300008: diary_markers_4
+    21300000: DiaryMonsters_0
+    21300002: DiaryMonsters_1
+    21300004: DiaryMonsters_2
+    21300006: DiaryMonsters_3
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -87,93 +86,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: diary_markers_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2089
-        width: 859
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 862cd4bec4e1bf041ae578f02feb96e2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diary_markers_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1655
-        width: 859
-        height: 402
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8d597246601ea64ba6f4d8700019bec
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diary_markers_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1220
-        width: 859
-        height: 402
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ecd2ba1c6662fa44daf67948ee24dc4c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diary_markers_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 786
-        width: 859
-        height: 402
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a772d73bf690c24bbe9d230464639d6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: diary_markers_4
+      name: DiaryMonsters_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 859
-        height: 400
+        width: 1567
+        height: 1328
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,7 +100,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14e7ee66c8e79e3489534dfbba0f7e93
+      spriteID: 52ca20bf8179e0b42b3c43761eb0bfe2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiaryMonsters_1
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 95
+        width: 1312
+        height: 1273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23e18290127c0b4ea79b8cb03354a5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiaryMonsters_2
+      rect:
+        serializedVersion: 2
+        x: 3704
+        y: 55
+        width: 1093
+        height: 1391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3cd67ed60e33947a72bff80ff5ead3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiaryMonsters_3
+      rect:
+        serializedVersion: 2
+        x: 5319
+        y: 22
+        width: 1487
+        height: 1484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2bb0fb75563c349a11b09859a2129e
       vertices: []
       indices: 
       edges: []
@@ -189,7 +168,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e7d33f76e9793a94d9dabdea6319a1ad
+    spriteID: 83e4b69ec0464764ab1d3eaf2d5eb492
     vertices: []
     indices: 
     edges: []

@@ -1,12 +1,15 @@
 fileFormatVersion: 2
-guid: 99626060ea940bd42b31319fda32f37f
+guid: 735f4e1a1084fd94e8a12b260399afc3
 TextureImporter:
   fileIDToRecycleName:
-    21300000: diary_markers_0
-    21300002: diary_markers_1
-    21300004: diary_markers_2
-    21300006: diary_markers_3
-    21300008: diary_markers_4
+    21300000: diary_monstersNames_0
+    21300002: diary_monstersNames_1
+    21300004: diary_monstersNames_2
+    21300006: diary_monstersNames_3
+    21300008: diary_monstersNames_4
+    21300010: diary_monstersNames_5
+    21300012: diary_monstersNames_6
+    21300014: diary_monstersNames_7
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -87,13 +90,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: diary_markers_0
+      name: diary_monstersNames_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2089
-        width: 859
-        height: 400
+        y: 601
+        width: 1684
+        height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -101,19 +104,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 862cd4bec4e1bf041ae578f02feb96e2
+      spriteID: 49edd43d2f548874bb9f4e772602856d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diary_markers_1
+      name: diary_monstersNames_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1655
-        width: 859
-        height: 402
+        x: 1788
+        y: 601
+        width: 1684
+        height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,19 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8d597246601ea64ba6f4d8700019bec
+      spriteID: b6481be872ce6d345907f6ddc22cbcd5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diary_markers_2
+      name: diary_monstersNames_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 1220
-        width: 859
-        height: 402
+        y: 399
+        width: 1684
+        height: 159
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,19 +144,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecd2ba1c6662fa44daf67948ee24dc4c
+      spriteID: 0e7b095410ba9b5468983b5ededa55c1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diary_markers_3
+      name: diary_monstersNames_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 786
-        width: 859
-        height: 402
+        x: 1788
+        y: 399
+        width: 1684
+        height: 159
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,19 +164,59 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a772d73bf690c24bbe9d230464639d6
+      spriteID: fc7f01fefd6532543ba8b66da19f862c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: diary_markers_4
+      name: diary_monstersNames_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 197
+        width: 1684
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fcc85130c8f5cd44ad7ca60d8b829a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diary_monstersNames_5
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 196
+        width: 1684
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc5ae68dc20a6c4c8027a1398629792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diary_monstersNames_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 859
-        height: 400
+        width: 1684
+        height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,7 +224,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14e7ee66c8e79e3489534dfbba0f7e93
+      spriteID: 18941988bba641841a6556111c680692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diary_monstersNames_7
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 0
+        width: 1684
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9104b41f5d5094eabaf224cae61d0e
       vertices: []
       indices: 
       edges: []
@@ -189,7 +252,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e7d33f76e9793a94d9dabdea6319a1ad
+    spriteID: 129566d524d51544893d49254372aeec
     vertices: []
     indices: 
     edges: []
