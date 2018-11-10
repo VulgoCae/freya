@@ -12,6 +12,7 @@ public class Inputs : MonoBehaviour {
 	public GameObject rewardObj;
 	public GameObject creatureObj;
 	
+	public GameObject defeatedObj;
 	public void ComboUsedWriter()
 	{
 		comboCheckerText.text = "Combo " + Combat.comboList[Methods.lastComboIndex].name + " has been used!";
@@ -51,9 +52,8 @@ public class Inputs : MonoBehaviour {
 		ComboCheckerWriter();
 		ComboUsedWriter();
 		Methods.ComboChecker();
-		Methods.HPChecker(rewardObj, creatureObj);
+		Methods.HPChecker(rewardObj, creatureObj, defeatedObj);
 	}
-		
 
 	public void AddActionToLine(int index)
 	{

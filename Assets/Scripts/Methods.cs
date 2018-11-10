@@ -13,13 +13,13 @@ public class Methods {
 	public static bool comboIsReady;
 	public static int monsterIndex;
 
-
-	public static void HPChecker(GameObject obj, GameObject enemy)
+	public static void HPChecker(GameObject obj, GameObject enemy, GameObject defeated)
 	{
 		Debug.Log("monster hp:" + Avatar.monsterList[Methods.monsterIndex].hpNow);
 		if(Avatar.freya.hpNow <= 0)
 		{
 			Debug.Log("Game Over");
+			defeated.gameObject.SetActive(true);
 
 		}
 		if(Avatar.monsterList[Methods.monsterIndex].hpNow <= 0)
@@ -104,6 +104,7 @@ public class Methods {
 		index = 0;
 		Debug.Log("result: " + result);
 	}
+
 	public static void ResultChecker()
 	{
 		if(result == false)
@@ -117,6 +118,7 @@ public class Methods {
 			comboIsReady = true;
 		}
 	}
+
 	public static void ActionsLoad()
 	{
 		Actions action01 = new Actions("ActionName1", 1, 1);

@@ -37,6 +37,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224167378574715018}
+  - component: {fileID: 114385114582024190}
   m_Layer: 5
   m_Name: OptionsTopMenu
   m_TagString: Untagged
@@ -121,6 +122,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114385114582024190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1343626792493726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c9387c40fc9224aa75e5ec8df190a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114474694448295120
 MonoBehaviour:
   m_ObjectHideFlags: 1

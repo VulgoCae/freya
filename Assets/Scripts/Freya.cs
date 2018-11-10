@@ -6,8 +6,17 @@ public class Freya {
 
 	public int hpNow, hpMax, dodge, progress;
 
+	public static void DodgeUpdate()
+	{
+		if(Combat.actionList[Methods.lastComboIndex].dodge > 0)
+		{
+			Avatar.freya.dodge += Combat.actionList[Methods.lastComboIndex].dodge;
+		}
+	}
 	public static void HPUpdate()
 	{
+		DodgeUpdate();
+
 		if(Monster.actionReady == true)
 		{
 			Monster.LoadAction();
