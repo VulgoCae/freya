@@ -10,10 +10,8 @@ public class Cards : MonoBehaviour {
 
 	public static List<GameObject> cardsList = new List<GameObject>();
 
-	public void OnClick(GameObject gameObj)
+	public void OnClick()
 	{
-		//Debug.Log("comboisready: " + Methods.comboIsReady);
-		//Debug.Log("lastcomboindex: " + Methods.lastComboIndex);
 		if(Methods.comboIsReady == true)
 		{
 			cardsList[Methods.lastComboIndex].gameObject.SetActive(true);

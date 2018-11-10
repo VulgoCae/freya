@@ -11,9 +11,10 @@ public class Methods {
 	public static bool checkerLock;
 	public static int lastComboIndex;
 	public static bool comboIsReady;
-	public static int monsterIndex = 0;
+	public static int monsterIndex;
 
-	public static void HPChecker()
+
+	public static void HPChecker(GameObject obj, GameObject enemy)
 	{
 		Debug.Log("monster hp:" + Avatar.monsterList[Methods.monsterIndex].hpNow);
 		if(Avatar.freya.hpNow <= 0)
@@ -23,8 +24,9 @@ public class Methods {
 		}
 		if(Avatar.monsterList[Methods.monsterIndex].hpNow <= 0)
 		{
-			Debug.Log("monster < 0");
 			Methods.monsterIndex ++;
+			enemy.gameObject.SetActive(false);
+			obj.gameObject.SetActive(true);
 		}
 	}
 
@@ -130,9 +132,11 @@ public class Methods {
 	}
 	public static void CombosLoad()
 	{
-		Combos deepBreath = new Combos("Deep Breath", "111", 3, 0, 2, 5, 0);
+	//(string newName, string newCode, int newCrit, int newMove, int newRage, int newDodge, int newAtk)
+
+		Combos deepBreath = new Combos("Deep Breath", "111", 3, 0, 2, 6, 0);
 		Combos rollout = new Combos("Rollout", "121", 2, 1, 1, 4, 0);
-		Combos upperCut = new Combos("Uppercut", "123", 0, -1, 1, 0, 4);
+		Combos upperCut = new Combos("Jab", "123", 2, -1, 1, 0, 4);
 		Combos flyingKick = new Combos("Flying Kick", "224", 4, -2, 3, 0, 11);
 
 		Combat.comboList.Add(deepBreath);

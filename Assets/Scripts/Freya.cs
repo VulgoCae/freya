@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Freya {
 
-	public int hpNow, hpMax, dodge;
+	public int hpNow, hpMax, dodge, progress;
 
 	public static void HPUpdate()
 	{
@@ -25,10 +25,11 @@ public class Freya {
 		}
 	}
 
-	public Freya(int newHP, int newDodge)
+	public Freya(int newHP, int newDodge, int newProgress)
 	{
 		hpMax = newHP;
 		hpNow = newHP;
 		dodge = newDodge;
+		progress = newProgress;
 	}
 }
