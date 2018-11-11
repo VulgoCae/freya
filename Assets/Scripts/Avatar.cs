@@ -23,10 +23,7 @@ public class Avatar : MonoBehaviour {
 
 	void Start () {
 
-		Methods.DebugLogs();
-		Methods.CombosLoad();
-		Methods.ActionsLoad();
-		LoadMonsters();
+
 	}
 	
 	void Update () {

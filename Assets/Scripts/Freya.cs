@@ -10,7 +10,7 @@ public class Freya {
 	{
 		if(Combat.actionList[Methods.lastComboIndex].dodge > 0)
 		{
-			Avatar.freya.dodge += Combat.actionList[Methods.lastComboIndex].dodge;
+			Avatar.freya.dodge += Combat.comboList[Methods.lastComboIndex].dodge;
 		}
 	}
 	public static void HPUpdate()
